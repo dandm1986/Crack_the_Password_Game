@@ -24,3 +24,9 @@ The game is played until the end of the number of attempts or until the guessing
 - Adaptive design
 - Replay possibility added
 - Highscore saving added
+
+## Technologies used:
+
+- HTML5
+- CSS3
+- JavaScript
