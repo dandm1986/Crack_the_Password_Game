@@ -23,4 +23,4 @@ The game is played until the end of the number of attempts or until the guessing
 - MVC pattern implemented
 - Adaptive design
 - Replay possibility added
-- Best result saving added
+- Highscore saving added
