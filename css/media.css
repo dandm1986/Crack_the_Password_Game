@@ -1,0 +1,182 @@
+/********************************************************************/
+/**************************** BELOW 1360px **************************/
+/********************************************************************/
+
+@media (max-width: 85em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/********************************************************************/
+/*************************** BELOW 1232px ***************************/
+/********************************************************************/
+
+@media (max-width: 77em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/********************************************************************/
+/************************** BELOW 1104px ****************************/
+/********************************************************************/
+
+@media (max-width: 69em) {
+  .number {
+    font-size: 4rem;
+    width: 12rem;
+    padding: 4rem 0rem;
+  }
+
+  section {
+    width: 40%;
+  }
+
+  footer {
+    margin-top: 4.8rem;
+  }
+}
+
+/********************************************************************/
+/*************************** BELOW 896px ****************************/
+/********************************************************************/
+
+@media (max-width: 56em) {
+  header {
+    margin-bottom: 4.8rem;
+    gap: 4.8rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .password {
+    border-bottom: 0.6rem solid #eee;
+    height: 9rem;
+  }
+
+  .number {
+    font-size: 3.2rem;
+    width: 10rem;
+    padding: 3rem;
+  }
+
+  main {
+    padding-top: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  section {
+    width: 60vw;
+  }
+
+  .section-message--container {
+    padding: 2.4rem 4.8rem;
+    font-size: 1.8rem;
+  }
+
+  .score-container {
+    font-size: 2rem;
+  }
+}
+
+/********************************************************************/
+/*************************** BELOW 768px ****************************/
+/********************************************************************/
+
+@media (max-width: 48em) {
+  .password {
+    border-bottom: 0.4rem solid #eee;
+    height: 8rem;
+  }
+
+  .number {
+    font-size: 2.4rem;
+    width: 8rem;
+  }
+
+  .attempts {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 1.2rem 2.4rem;
+  }
+
+  .guess {
+    font-size: 2.4rem;
+    width: 30rem;
+  }
+
+  .section-message--container {
+    font-size: 1.6rem;
+  }
+}
+
+/********************************************************************/
+/*************************** BELOW 608px ****************************/
+/********************************************************************/
+
+@media (max-width: 38em) {
+  .password {
+    height: 6rem;
+  }
+
+  .number {
+    font-size: 1.4rem;
+    width: 6rem;
+    padding: 2.4rem;
+  }
+
+  section {
+    width: 70vw;
+  }
+
+  .section-message--container {
+    font-size: 1.4rem;
+  }
+
+  .score-container {
+    font-size: 1.6rem;
+  }
+}
+
+/********************************************************************/
+/*************************** BELOW 400px ****************************/
+/********************************************************************/
+
+@media (max-width: 25em) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .header-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .password {
+    border-bottom: 0.4rem solid #eee;
+    height: 4rem;
+  }
+
+  section {
+    width: 80vw;
+  }
+
+  .number {
+    font-size: 1.4rem;
+    width: 4rem;
+    padding: 1.2rem;
+  }
+
+  .score-container {
+    font-size: 1.6rem;
+  }
+}

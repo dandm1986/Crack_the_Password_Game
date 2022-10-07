@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin-bottom: 9.6rem;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 4.8rem;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  width: 100vw;
+}
+
+.password {
+  border-bottom: 0.8rem solid #eee;
+  height: 12rem;
+  position: relative;
+}
+
+.numbers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3rem;
+}
+
+.number {
+  list-style: none;
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+}
+
+.attempts {
+  font-size: 1.4rem;
+}
+
+/* MAIN */
+
+main {
+  padding-top: 4.8rem;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-message--container {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 40rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 9.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  font-size: 2rem;
+}
