@@ -14,10 +14,10 @@ export const render = (data) => {
   const markup = `
     <header>
       <div class="header-menu">
-        <button class="btn again">Заново!</button>
-        <p class="attempts">Осталось попыток: ${_data.attempts}</p>
+        <button class="btn again">Again!</button>
+        <p class="attempts">Attempts left: ${_data.attempts}</p>
       </div>
-      <h1>Взломай пароль!</h1>
+      <h1>Crack the Password!</h1>
       <div class="password">
         <ul class="numbers flex">
         ${_data.password
@@ -34,7 +34,7 @@ export const render = (data) => {
     <main>
       <section class="section-guess">
         <input type="number" class="guess" />
-        <button class="btn check">Взломать!</button>
+        <button class="btn check">Crack!</button>
       </section>
       <section class="section-message">
         <div class="section-message--container">
@@ -44,11 +44,11 @@ export const render = (data) => {
     </main>
     <footer>
       <div class="score-container">
-        <p class="label-score">Счет: <span class="score">${
+        <p class="label-score">Score: <span class="score">${
           _data.score
         }</span></p>
         <p class="label-highscore">
-          Лучший счет: <span class="highscore">${_data.highscore}</span>
+          Highscore: <span class="highscore">${_data.highscore}</span>
         </p>
       </div>
     </footer>
@@ -105,24 +105,24 @@ const generateMarkupPasswordShow = (number) => {
 
 const generateMarkupMessage = (data) => {
   if (!data) {
-    return `<p>Введите ваш вариант</p>`;
+    return `<p>Enter your guess</p>`;
   } else if (data.score === 0) {
-    return `<p>Введите ваш вариант</p>`;
+    return `<p>Enter your guess</p>`;
   } else if (data.win) {
-    return `<p>Вы взломали пароль!</p>`;
+    return `<p>The password is cracked!</p>`;
   } else if (data.loose) {
-    return `<p>Пароль не взломан!</p>`;
+    return `<p>The password is not cracked!</p>`;
   } else if (data.error) {
     return `
-      <p>Будьте внимательнее!</p>
-      <p>Вы ввели неправильное количество цифр!</p>
-      <p>Пароль содержит ${data.password.length} цифр.</p>
+      <p>Be attentive!</p>
+      <p>You entered the wrong number of digits!</p>
+      <p>The password contains ${data.password.length} digits.</p>
     `;
   } else {
     return `
-      <p>Cовпавших цифр не на своих местах:</p>
+      <p>Matching digits out of place:</p>
       <p>${displayNumbers(data.guessedNumbers)}</p>
-      <p>Цифр на своих местах:</p>
+      <p>Matching digits in their places:</p>
       <p>${displayNumbers(data.guessedPositions)}</p>
     `;
   }
